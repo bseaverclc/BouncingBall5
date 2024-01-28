@@ -12,8 +12,10 @@ public class MyPanel extends JPanel {
     public MyPanel(){
 
         setBackground(Color.GREEN);
+        setPreferredSize(new Dimension(500,500));
          myBall = new Ball(200,300);
       ImageIcon icon = new ImageIcon("Images/ponyT.png");
+        System.out.println(icon);
       // Scaling the image before putting it on the label
       icon.setImage(icon.getImage().getScaledInstance(50,50,Image.SCALE_DEFAULT));
       // Creating a Label with an icon on it
